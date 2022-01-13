@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="Home">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css -->
+    <link rel="stylesheet" href="SimpCook.css">
+        <!-- шрифты -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">    
+    <title>SimpCook</title>
+</head>
+<body>
+    <!-- svg -->
+    <svg display="none">
+        <symbol width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg" id="instagram" >
+            <path d="M8.39215 32.6023C6.49232 32.5159 5.46028 32.1997 4.77383 31.9319C3.86427 31.5778 3.21581 31.1563 2.53316 30.4746C1.85051 29.7929 1.42801 29.1444 1.07577 28.2348C0.808029 27.5484 0.491866 26.5163 0.405467 24.6165C0.310523 22.5629 0.291534 21.9467 0.291534 16.7438C0.291534 11.5409 0.312422 10.9256 0.404518 8.87008C0.490917 6.97025 0.808979 5.94011 1.07482 5.25177C1.42896 4.34221 1.85146 3.69374 2.53221 3.01015C3.21391 2.32845 3.86237 1.905 4.77289 1.55276C5.45933 1.28502 6.49137 0.968852 8.3912 0.882453C10.4458 0.788459 11.0629 0.76947 16.2639 0.76947C21.4669 0.76947 22.0821 0.790358 24.1376 0.882453C26.0375 0.968852 27.0676 1.28691 27.7559 1.55276C28.6655 1.905 29.314 2.32845 29.9966 3.01015C30.6793 3.69184 31.0999 4.34126 31.454 5.25082C31.7218 5.93727 32.0379 6.96931 32.1243 8.86913C32.2183 10.9247 32.2373 11.5399 32.2373 16.7428C32.2373 21.9439 32.2183 22.561 32.1243 24.6165C32.0379 26.5163 31.7199 27.5484 31.454 28.2348C31.0999 29.1444 30.6783 29.7929 29.9966 30.4746C29.3149 31.1563 28.6655 31.5778 27.7559 31.9319C27.0695 32.1997 26.0375 32.5159 24.1376 32.6023C22.084 32.6962 21.4669 32.7152 16.2639 32.7152C11.0629 32.7152 10.4458 32.6972 8.39215 32.6023Z" fill="url(#paint0_radial_24_11)"/>
+            <path d="M8.39215 32.6023C6.49232 32.5159 5.46028 32.1997 4.77383 31.9319C3.86427 31.5778 3.21581 31.1563 2.53316 30.4746C1.85051 29.7929 1.42801 29.1444 1.07577 28.2348C0.808029 27.5484 0.491866 26.5163 0.405467 24.6165C0.310523 22.5629 0.291534 21.9467 0.291534 16.7438C0.291534 11.5409 0.312422 10.9256 0.404518 8.87008C0.490917 6.97025 0.808979 5.94011 1.07482 5.25177C1.42896 4.34221 1.85146 3.69374 2.53221 3.01015C3.21391 2.32845 3.86237 1.905 4.77289 1.55276C5.45933 1.28502 6.49137 0.968852 8.3912 0.882453C10.4458 0.788459 11.0629 0.76947 16.2639 0.76947C21.4669 0.76947 22.0821 0.790358 24.1376 0.882453C26.0375 0.968852 27.0676 1.28691 27.7559 1.55276C28.6655 1.905 29.314 2.32845 29.9966 3.01015C30.6793 3.69184 31.0999 4.34126 31.454 5.25082C31.7218 5.93727 32.0379 6.96931 32.1243 8.86913C32.2183 10.9247 32.2373 11.5399 32.2373 16.7428C32.2373 21.9439 32.2183 22.561 32.1243 24.6165C32.0379 26.5163 31.7199 27.5484 31.454 28.2348C31.0999 29.1444 30.6783 29.7929 29.9966 30.4746C29.3149 31.1563 28.6655 31.5778 27.7559 31.9319C27.0695 32.1997 26.0375 32.5159 24.1376 32.6023C22.084 32.6962 21.4669 32.7152 16.2639 32.7152C11.0629 32.7152 10.4458 32.6972 8.39215 32.6023Z" />
+            <path d="M12.3294 16.8209C12.3294 14.6328 14.0999 12.8585 16.2845 12.8585C18.4691 12.8585 20.2405 14.6328 20.2405 16.8209C20.2405 19.009 18.4691 20.7833 16.2845 20.7833C14.0999 20.7833 12.3294 19.009 12.3294 16.8209V16.8209ZM10.1909 16.8209C10.1909 20.1919 12.919 22.9244 16.2845 22.9244C19.65 22.9244 22.3782 20.1919 22.3782 16.8209C22.3782 13.4499 19.65 10.7174 16.2845 10.7174C12.919 10.7174 10.191 13.4498 10.191 16.8209H10.1909ZM21.1954 10.4754C21.1953 10.7575 21.2787 11.0333 21.4351 11.268C21.5915 11.5026 21.8138 11.6855 22.074 11.7935C22.3342 11.9016 22.6205 11.93 22.8967 11.875C23.173 11.8201 23.4268 11.6844 23.626 11.485C23.8253 11.2856 23.961 11.0315 24.0161 10.7548C24.0711 10.4781 24.043 10.1913 23.9354 9.93066C23.8277 9.66999 23.6452 9.44715 23.4111 9.29032C23.177 9.1335 22.9017 9.04973 22.6201 9.04962H22.6195C22.242 9.0498 21.8799 9.20005 21.6129 9.46739C21.3459 9.73472 21.1958 10.0973 21.1954 10.4754V10.4754ZM11.4902 26.4962C10.3332 26.4434 9.70431 26.2504 9.28639 26.0873C8.73234 25.8713 8.33702 25.6139 7.92138 25.1982C7.50575 24.7825 7.24847 24.3869 7.03372 23.8319C6.87081 23.4135 6.67809 22.7835 6.62549 21.6246C6.56796 20.3717 6.55647 19.9953 6.55647 16.8211C6.55647 13.6469 6.56891 13.2716 6.62549 12.0176C6.67818 10.8587 6.87233 10.2299 7.03372 9.81025C7.24942 9.2553 7.50632 8.85934 7.92138 8.44304C8.33645 8.02673 8.73139 7.76903 9.28639 7.55394C9.70412 7.39076 10.3332 7.19773 11.4902 7.14505C12.7411 7.08742 13.1168 7.07592 16.2845 7.07592C19.4522 7.07592 19.8283 7.08818 21.0803 7.14524C22.2373 7.19801 22.8651 7.39248 23.284 7.55413C23.8381 7.76922 24.2334 8.02749 24.6491 8.44323C25.0647 8.85896 25.321 9.25549 25.5367 9.81044C25.6996 10.2288 25.8924 10.8589 25.945 12.0178C26.0025 13.2717 26.014 13.6471 26.014 16.8213C26.014 19.9955 26.0025 20.3708 25.945 21.6248C25.8923 22.7837 25.6986 23.4136 25.5367 23.8321C25.321 24.3871 25.0641 24.783 24.6491 25.1984C24.234 25.6138 23.8381 25.8715 23.284 26.0875C22.8663 26.2507 22.2373 26.4437 21.0803 26.4964C19.8294 26.554 19.4536 26.5655 16.2845 26.5655C13.1154 26.5655 12.7407 26.554 11.4902 26.4964V26.4962ZM11.3919 5.00655C10.1286 5.06418 9.26532 5.26482 8.51142 5.55865C7.73113 5.86209 7.0697 6.26917 6.40922 6.92967C5.74874 7.59017 5.34336 8.25276 5.04042 9.03526C4.74706 9.79085 4.54674 10.655 4.48921 11.9204C4.43073 13.1878 4.41734 13.593 4.41734 16.8209C4.41734 20.0489 4.43073 20.454 4.48921 21.7214C4.54674 22.9869 4.74706 23.851 5.04042 24.6066C5.34336 25.3881 5.74884 26.0519 6.40922 26.7122C7.06961 27.3724 7.73018 27.7789 8.51142 28.0832C9.26674 28.377 10.1286 28.5776 11.3919 28.6353C12.6579 28.6929 13.0618 28.7072 16.2845 28.7072C19.5073 28.7072 19.9118 28.6938 21.1771 28.6353C22.4405 28.5776 23.3032 28.377 24.0576 28.0832C24.8379 27.7789 25.4993 27.3727 26.1598 26.7122C26.8203 26.0517 27.2248 25.3881 27.5286 24.6066C27.822 23.851 28.0232 22.9868 28.0798 21.7214C28.1373 20.4531 28.1507 20.0489 28.1507 16.8209C28.1507 13.593 28.1373 13.1878 28.0798 11.9204C28.0223 10.6549 27.822 9.79038 27.5286 9.03526C27.2248 8.25371 26.8192 7.59122 26.1598 6.92967C25.5004 6.26812 24.8379 5.86209 24.0585 5.55865C23.3032 5.26482 22.4404 5.06323 21.1781 5.00655C19.9125 4.94864 19.5082 4.93457 16.2859 4.93457C13.0637 4.93457 12.6584 4.94798 11.3924 5.00655" fill="white"/>    
+        </symbol>
+        <symbol width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg" id="facebook">
+            <path d="M16.4204 32.7152C25.2419 32.7152 32.3932 25.5639 32.3932 16.7424C32.3932 7.92077 25.2419 0.76947 16.4204 0.76947C7.59878 0.76947 0.447479 7.92077 0.447479 16.7424C0.447479 25.5639 7.59878 32.7152 16.4204 32.7152Z" />
+            <path d="M21.7408 5.22699H18.2886C16.24 5.22699 13.9613 6.12478 13.9613 9.21901C13.9713 10.2972 13.9613 11.3297 13.9613 12.4918H11.5913V16.4214H14.0347V27.7342H18.5244V16.3468H21.4878L21.7559 12.4807H18.447C18.447 12.4807 18.4544 10.761 18.447 10.2615C18.447 9.03876 19.6681 9.10879 19.7416 9.10879C20.3226 9.10879 21.4524 9.11055 21.7425 9.10879V5.22699H21.7408Z" fill="white"/>
+        </symbol>
+        <symbol width="33" height="26" viewBox="0 0 33 26" xmlns="http://www.w3.org/2000/svg" id="twitter">
+            <path d="M10.3782 26C22.8316 26 29.6419 15.9981 29.6419 7.32472C29.6419 7.04067 29.6359 6.75792 29.6227 6.47634C30.9479 5.54679 32.0915 4.39585 33 3.07749C31.7868 3.60035 30.4814 3.95226 29.1119 4.11092C30.5098 3.29836 31.5829 2.01285 32.0892 0.480545C30.7601 1.24488 29.3062 1.78369 27.79 2.07376C26.5545 0.79794 24.7955 0 22.8479 0C19.1089 0 16.077 2.93943 16.077 6.56272C16.077 7.07785 16.1365 7.57874 16.2526 8.05935C10.6255 7.78485 5.63582 5.17302 2.29645 1.20159C1.695 2.20326 1.37864 3.34169 1.3797 4.5006C1.3797 6.77781 2.57494 8.78806 4.39262 9.96417C3.31744 9.93234 2.26586 9.6508 1.3263 9.14322C1.3253 9.17078 1.3253 9.19763 1.3253 9.22707C1.3253 12.4058 3.65904 15.0598 6.75702 15.6612C6.17518 15.8148 5.57478 15.8924 4.97173 15.8921C4.53623 15.8921 4.11179 15.8506 3.69929 15.7738C4.56124 18.3817 7.06066 20.2795 10.024 20.3326C7.70671 22.0934 4.78762 23.1421 1.61499 23.1421C1.07528 23.1426 0.53602 23.1122 0 23.0512C2.99643 24.9131 6.55439 25.9995 10.3785 25.9995" />
+        </symbol>
+    </svg>
+    <!-- header -->
+    <div class="container">
+        <header class="header">
+            <a class="logo__header" href="#" data-scroll="#Home">
+                <img src="img/header/Simpcook.png" alt="">
+            </a>
+            <div class="header__menu">
+                <div class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </div>
+               <div class="menu">
+                    <a class="header__menu__item" href="#" data-scroll="#Home">Home</a>
+                    <a class="header__menu__item" href="#" data-scroll="#Contact">Contact</a>
+                    <a class="header__menu__item" href="#" data-scroll="#Features">Features</a>
+                    <a class="header__menu__item" href="#" data-scroll="#About">About</a>
+                    <a class="header__menu__item" href="#popup" >Registration</a>
+                    <a class="header__menu__item sign__in" href="#">Sign in <img class="sign__in__img" src="img/header/sign_in.png" alt="">
+                    <form class="sign__in__form">
+                        <input class="form__text login" type="text" placeholder="Login">
+                        <input class="form__text password" type="text" placeholder="Password">
+                        <input class="sign__in__btn" type="submit" value="Sign in" href="#">
+                    </form>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- intro -->
+        <div class="intro">
+            <div class="intro__soical__box">
+                <div class="intro__social__bg">
+                    <a class="social__icon__intro__btn" href="#">
+                        <svg class="social__icon__intro socail__instagram">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="intro__social__bg">
+                    <a class="social__icon__intro__btn" href="#">
+                        <svg class="social__icon__intro social__facebook">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="intro__social__bg">
+                    <a class="social__icon__intro__btn" href="#">
+                        <svg class="social__icon__intro social__twitter">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="intro__box"> 
+                <div class="intro__title">Professional cooking with great chef</div>
+                <div class="intro__text">Simcook website that provides complete and delicious recipes for all foods for all who like to cook and served simply.</div>
+            </div> 
+            <div class="slider__intro">
+                <div class="slider__intro__item">
+                    <img src="img/intro/intro__food1.png" alt="">
+                </div>
+                <div class="slider__intro__item">
+                    <img src="img/intro/intro__food2.png" alt="">
+                </div>
+            </div>
+            <a class="intro__btn" href="#" data-scroll="#Recipe">Get Started</a>
+        </div><!-- intro -->
+        <!-- search -->
+        <div class="seacrh__box">
+            <div class="search__category">
+                <p class="category__name">Ingredients</p>
+                <div class="search__list ingredients">
+                    <a class="category__item" href="#">Beef</a>
+                    <a class="category__item 
+                    list" href="#">Chicken</a>
+                    <a class="category__item 
+                    list" href="#">Fish</a>
+                    <div class="search__stroke">
+                        <img src="img/search/Stroke.png" alt=""> 
+                    </div>
+                </div>
+            </div>
+            <div class="search__category">
+                <p class="category__name">Method</p>
+                <div class="search__list method">
+                    <a class="category__item" href="#">Roast</a>
+                    <a class="category__item 
+                    list" href="#">Cook</a>
+                    <a class="category__item 
+                    list" href="#">Stew</a>
+                    <div class="search__stroke">
+                        <img src="img/search/Stroke.png" alt=""> 
+                    </div>
+                </div>
+            </div>
+            <div class="search__category">
+                <p class="category__name">Many Dishes</p>
+                <div class="search__list dishes">
+                    <a class="category__item number" href="#">2</a>
+                    <a class="category__item 
+                    list number" href="#">4</a>
+                    <div class="search__stroke">
+                        <img src="img/search/Stroke.png" alt=""> 
+                    </div>
+                </div>
+            </div>
+            <a class="search__btn" href="#">Search</a>
+        </div>
+        <!-- food recipe -->
+        <div class="food__recipe" id=Recipe>
+            <div class="food__recipe__title1">Food recipe</div>
+                <div class="food__recipe__title__box">
+                    <div class="food__recipe__title2">With delicious food</div>
+                    <a class="food__recipe__title3" id="food__recipe" onclick="see__more()"; type="food__recipe">See more</a>
+                </div>
+            <div class="food__recipe__box" id="food__recipe__box">
+                <a class="food__recipe__item" href="#">
+                    <img class="img__recipe" src="img/food__recipe/food__recipe2.png">
+                    <div class="bookmarker__box">
+                        <img class="bookmark" src="img/food__recipe/bg__bookmarker.png">
+                        <img class="bookmark2" src="img/food__recipe/bookmarker.png">
+                    </div>
+                    <div class="recipe__description">
+                        <div class="recipe__name">Beef Green</div>
+                        <div class="recipe_grade_box">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <div class="grade">4.8/5</div> 
+                        </div>
+                    </div>
+                </a>
+               <a class="food__recipe__item" href="#">
+                    <img class="img__recipe" src="img/food__recipe/food__recipe1.png">
+                    <div class="bookmarker__box">
+                        <img class="bookmark" src="img/food__recipe/bg__bookmarker.png">
+                        <img class="bookmark2" src="img/food__recipe/bookmarker.png">
+                    </div>
+                    <div class="recipe__description">
+                        <div class="recipe__name">Beef Green</div>
+                        <div class="recipe_grade_box">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <div class="grade">4.8/5</div> 
+                        </div>
+                    </div>
+                </a>
+                <!-- hiden -->
+                <a class="food__recipe__item" href="#">
+                    <img class="img__recipe" src="img/food__recipe/food__recipe1.png">
+                    <div class="bookmarker__box">
+                        <img class="bookmark" src="img/food__recipe/bg__bookmarker.png">
+                        <img class="bookmark2" src="img/food__recipe/bookmarker.png">
+                    </div>
+                    <div class="recipe__description">
+                        <div class="recipe__name">Beef Green</div>
+                        <div class="recipe_grade_box">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <div class="grade">4.8/5</div> 
+                        </div>
+                    </div>
+                </a>
+                <a class="food__recipe__item" href="#">
+                    <img class="img__recipe" src="img/food__recipe/food__recipe2.png">
+                    <div class="bookmarker__box">
+                        <img class="bookmark" src="img/food__recipe/bg__bookmarker.png">
+                        <img class="bookmark2" src="img/food__recipe/bookmarker.png">
+                    </div>
+                    <div class="recipe__description">
+                        <div class="recipe__name">Beef Green</div>
+                        <div class="recipe_grade_box">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <img class="grade__star" src="img/food__recipe/star.png">
+                            <div class="grade">4.8/5</div> 
+                        </div>
+                    </div>
+                </a>
+            </div><!-- food__recipe__box -->
+        </div><!-- food__recipe -->
+        <!-- about__us -->
+        <div class="about__us__box" id="About">
+            <img class="img__shef" src="img/about__us/shef.jpg">
+            <div class="about__us__item">
+                <div class="about__us__title">About us</div>
+                <div class="about__us__title2">With Professional chef</div>
+                <div class="about__us__text">Dishes made directly by professional chefs with complete recipes as well as relevant ingredients and tools commonly used for everyday cooking.</div>
+                <div class="shef_description_box">
+                    <img class="img__shef__description" src="img/about__us/pen.png">
+                    <div class="shef_description_item">
+                        <div class="shef_description_item__title">Experienced Chef</div>
+                        <div class="shef_description_item__text">With a chef with more than 10 years of experience.</div>
+                    </div>
+                </div>
+                <div class="shef_description_box">
+                    <img class="img__shef__description" src="img/about__us/achiv.png">
+                    <div class="shef_description_item">
+                        <div class="shef_description_item__title">Certified</div>
+                        <div class="shef_description_item__text">Certified cook with more perfect cooking skills.</div>
+                    </div>
+                </div>
+                    <div class="shef__show" id="shef__show">
+                        <div class="shef_description_box shef__hiden" id="shef_description_box">
+                            <img class="img__shef__description" src="img/about__us/pen.png">
+                            <div class="shef_description_item">
+                                <div class="shef_description_item__title">Experience</div>
+                                <div class="shef_description_item__text">Cook with more perfect cooking skills.</div>
+                            </div>
+                        </div>
+                        <div class="shef_description_box shef__hiden" id="shef_description_box">
+                            <img class="img__shef__description" src="img/about__us/achiv.png">
+                            <div class="shef_description_item">
+                                <div class="shef_description_item__title">
+                                    Certified</div>
+                                <div class="shef_description_item__text">With a chef with more than 10 years of experience.</div>
+                            </div>
+                        </div>
+                    </div>
+                <a><img class="shef__more" id="shef__more" src="img/about__us/shef__more.png"></a>
+            </div><!-- about__us__item -->
+        </div><!-- about__us__box -->
+        <!-- reviews -->
+        <div class="reviews" id="Features">
+            <div class="reviews__slider">
+                <div class="reviews__box">
+                    <div class="reviews__left__item">
+                        <div class="reviews__title">What Said</div>
+                        <div class="reviews__title2">What users say?</div>
+                        <div class="reviews__text">I managed to make this dish deliciously and with the right dose and easily available ingredients, I thank you very much with this site or application because it is very helpful for housewives who cannot cook or the food is not good.</div>
+                        <div class="person__reviews__box">
+                            <div class="person__reviews__left">
+                                <img class="img__person__reviews" src="img/reviews/person1.png">
+                                <div class="person__name__title__box">
+                                    <div class="person__name">Sarah Wilson</div>
+                                    <div class="person__position">Teach Cooking</div>
+                                </div>
+                            </div><!-- person__reviews__left -->
+                            <div class="person__reviews__right">
+                                <div class="reviews__rate__box">
+                                    <div class="rate">Rate</div>
+                                    <div class="reviews__grade">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                    </div><!-- reviews__grade -->
+                                </div><!-- reviews__rate__box -->
+                                <div class="reviews__grade">4.8/5</div>
+                            </div>
+                        </div><!-- person__reviews__box -->
+                    </div><!-- reviews__left__item -->
+                    <div class="reviews__right__item">
+                        <img class="img__reviews" src="img/reviews/reviews1.jpg">
+                    </div>
+                </div><!-- reviews__box -->
+            </div><!-- reviews__slider -->
+            <div class="reviews__slider">
+                <div class="reviews__box">
+                    <div class="reviews__left__item">
+                        <div class="reviews__title">What Said</div>
+                        <div class="reviews__title2">What users say?</div>
+                        <div class="reviews__text">Make this dish deliciously and with the right dose and easily available ingredients, I thank you very much with this site or application because it is very helpful for housewives who cannot cook or the food is not good. Recommend!</div>
+                        <div class="person__reviews__box">
+                            <div class="person__reviews__left">
+                                <img class="img__person__reviews" src="img/subscribe/joined1.jpg">
+                                <div class="person__name__title__box">
+                                    <div class="person__name">Cortni Love</div>
+                                    <div class="person__position">Teach Cooking</div>
+                                </div>
+                            </div><!-- person__reviews__left -->
+                            <div class="person__reviews__right">
+                                <div class="reviews__rate__box">
+                                    <div class="rate">Rate</div>
+                                    <div class="reviews__grade">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                        <img class="reviews__grade__star" src="img/reviews/star.png" alt="">
+                                    </div><!-- reviews__grade -->
+                                </div><!-- reviews__rate__box -->
+                                <div class="reviews__grade">4.8/5</div>
+                            </div>
+                        </div><!-- person__reviews__box -->
+                    </div><!-- reviews__left__item -->
+                    <div class="reviews__right__item">
+                        <img class="img__reviews" src="img/reviews/reviews1.jpg">
+                    </div>
+                </div><!-- reviews__box -->
+            </div><!-- reviews__slider -->
+        </div><!-- reviews -->
+        <div class="subscripe">
+            <img class="subscribe__img" src="img/subscribe/subscribe.jpg">
+            <div class="subscribe__right__box">
+                <div class="subscribe__title">You want to get lots of recipes</div>
+                <div class="subscribe__text">More recipes and all ingredients will be shown and get support from us for 24 hours.
+                </div>
+                <div class="joined__box">
+                    <div class="joined__person__img">
+                        <img class="joined__person__item" src="img/subscribe/joined1.jpg">
+                        <img class="joined__person__item help__joined" src="img/subscribe/joined2.jpg">
+                        <img class="joined__person__item help__joined2" src="img/subscribe/joined3.jpg">
+                        <img class="joined__person__item help__joined3" src="img/subscribe/joined4.jpg">
+                    </div>
+                    <div class="subsribe__number">24.678K Joined</div>
+                </div><!-- joined__box -->
+                <div class="subscribe__btn__box">
+                    <div class="subscribe__btn__text">Lets Join With Us</div>
+                    <img class="subscine__arow" src="img/subscribe/arow.png"> 
+                    <a class="subscribe__btn" href="#">Subscribe</a>
+                </div>
+            </div><!-- subscribe__right__box -->
+        </div><!-- subscripe -->
+     </div><!-- container -->
+     <div class="contact" id="Contact">
+            <div class="container">
+                <div class="contac__box">
+                    <div class="contact__item__simpcook">
+                        <div class="contact__title__simpcook">Simpcook</div>
+                        <div class="contact__text__simpcook">Semi street 06, Sumobito, Jombang Indonesian </div>
+                        <div class="contact__text__simpcook">+62 85456729899
+                            hey@simpcook.com</div>
+                    </div>
+                    <div class="contact__item__about__us">
+                        <div class="contact__title__about__us">About Us</div>
+                        <a class="contact__text__about__us" href="#">Features</a>
+                        <a class="contact__text__about__us" href="#">Recipe</a>
+                        <a class="contact__text__about__us" href="#">Careers</a>
+                        <a class="contact__text__about__us" href="#">Subscribe</a>
+                        <a class="contact__text__about__us" href="#">Customer Care</a>
+                    </div>
+                    <div class="contact__item__support">
+                        <h class="contact__title__support">Support</h>
+                        <a class="contact__text__support" href="#">Contact Us</a>
+                        <a class="contact__text__support" href="#">FaQ</a>
+                        <a class="contact__text__support" href="#">Call Center</a>
+                    </div>
+                    <div class="contact__item__form">
+                        <h class="contact__title__form">Want To Ask?</h>
+                        <form class="form__bg">
+                            <textarea class="textarea__form" rows="14" cols="10" wrap="soft"></textarea>
+                            <input class="send__message" type="submit" value="Send Me" href="#">
+                        </form>
+                    </div>
+                </div>
+            </div><!-- container -->
+    </div><!-- contact -->
+    <!-- popup -->
+    <div class="popup" id="popup">
+        <a class="popup__escape__area" href="##"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <div class="popup__title">Registration</div>
+                <form class="popup__text">
+                    <input class="popup__reg__area" type="text" placeholder="Login">
+                    <input class="popup__reg__area" type="text" placeholder="Password">
+                    <input class="popup__btn" type="submit" value="Registration" href="#">
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/SimpCook.js"></script>
+</body>
+</html>

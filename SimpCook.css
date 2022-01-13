@@ -1,0 +1,1606 @@
+/* body */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-color: #fff;
+    min-width: 1120px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+/* container */
+.container{
+    width: 100%;
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    margin-top: 45px;
+}
+
+.header__fixed{
+    margin-top: 0;
+    height: 65px;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1010;
+    background-color: #fff;
+    animation-name: show__header;
+    animation-duration: .6s;
+}
+
+@keyframes show__header{
+    0%{
+        top: -70px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+/* logo */
+.logo__header{
+    margin: auto 0;
+}
+
+/* burger */
+.icon{
+    display: none;
+    width: 45px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.icon span{
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #333333;
+    border-radius: 9px;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease;
+}
+
+.icon span:nth-child(1){
+    top: 0px;
+}
+.icon span:nth-child(2), .icon span:nth-child(3){
+    top: 13px;
+}
+.icon span:nth-child(4){
+    top: 26px;
+}
+
+/* heder menu */
+.header__menu{
+    margin: auto 0;
+}
+
+.header__menu__item{
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 7px;
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 55px;
+    transition: .2s linear;
+}
+
+.header__menu__item:hover{
+    transform: scale(1.1);
+}
+/* sign in */
+.sign__in{
+    background: #57BE6C;
+    justify-content: space-between;
+    border-radius: 30px;
+    width: 165px;
+    height: 45px;  
+    color: #fff;
+    padding-left: 20px;
+    margin-right: 15px;
+}
+
+.sign__in:hover{
+    height: 180px;
+}
+
+.sign__in__img{
+    margin-left: 20px;
+}
+/* sign in form */
+
+.sign__in:hover .login{
+   display: block; 
+   top: 20px;
+}
+
+.sign__in:hover .password{
+    display: block; 
+    top: 65px;
+ }
+
+.sign__in:hover .sign__in__btn{
+    display: flex;
+    top: 130px;
+    height: 25px;
+    width: 65px;
+    left: 50px;
+    border-radius: 40px;
+    border: none;
+    justify-content: center;
+}
+
+.sign__in__btn{
+    display: none;
+    position: absolute;
+    font-weight: 18px;
+    font-weight: 400;
+    color: #222;
+    background: #fff;
+    cursor: pointer;
+}
+
+.sign__in:hover .registration{
+    display: flex;
+    top: 160px;
+    height: 25px;
+    width: 70px;
+    left: 50px;
+    background: none;
+    border: none;
+    justify-content: center;
+}
+
+.form__text{
+    display: none;
+    position: absolute;
+    width: 120px;
+    margin-top: 25px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font-weight: 18px;
+    font-weight: 400;
+    outline: none;
+}
+/* INTRO */
+.intro{
+    display: flex;
+    width: 100%;
+    max-width: 1245px;
+    height: 520px;
+    margin-top: 125px;
+    min-width: 0;
+}
+
+.intro__title{
+    width: 622px;
+    height: 140px;
+    font-size: 54px;
+    font-weight: 600;
+    color: #000;
+    line-height: 130%;
+}
+
+.intro__text{
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    color: #AAAAAA;
+    width: 460px;
+    height: 72px;
+}
+
+/* SLIDER */
+.slider__intro{
+    margin-top: 25px;;
+    width: 550px;
+}
+
+.slider__intro__item{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* SOCIAL */
+.intro__soical__box{
+    position: absolute;
+    top: 530px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 55px;
+    min-width: 0;
+}
+
+.intro__social__bg{
+    width: 60px;
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 17px;
+}
+
+.social__icon__intro{
+  height: 33px;
+  width: 33px;
+  margin-top: 10px;
+  margin-left: 14px;
+  transition: .2s linear;
+}
+
+.social__twitter{
+    margin-top: 13px;
+}
+
+.socail__instagram:hover{
+    fill: #dd2a7b;
+}
+
+.social__facebook:hover{
+    fill: #3b5998;
+}
+
+.social__twitter:hover{
+    fill:  #00acee;
+}
+
+.social__icon__intro{
+    fill: #aaa;
+}
+/* intro btn */
+.intro__btn{
+    display: flex;
+    position: absolute;
+    top: 630px;
+    width: 275px;
+    height: 70px;
+    background: #57BE6C;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.intro__btn:hover{
+    transform: scale(1.1);
+}
+
+/* search */
+.seacrh__box{
+    width: 1000px;
+    height: 110px;
+    border: 1.5px solid #222222;
+    border-radius: 25px;  
+    margin: 150px auto 130px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search__category{
+    display: flex;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 70px;
+    margin: 20px 0 20px 0;
+}
+
+.category__name{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #AAAAAA;
+}
+
+.search__btn{
+    display: block;
+    margin: 20px 0 20px 0;
+    width: 283px;
+    height: 70px;
+    background: #57BE6C;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 17px;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.search__btn:hover{
+    transform: scale(1.1);
+}
+
+.category__item{
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #222222;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.search__stroke{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.search__list{
+    width: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    transition: .2s ease;
+}
+
+.search__list:hover{
+    justify-content: start;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    height: 140px;
+    width: 130px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1.5px solid #222222;
+}
+
+.dishes:hover{
+    height: 80px;
+    width: 100px; 
+}
+
+.search__list:hover .number{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.list{
+    display: none;
+}
+
+.search__list:hover .list{
+    display: block;
+}
+
+.category__item:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+
+.search__list:hover .search__stroke{
+    display: none;
+}
+
+/* food recipe */
+.food__recipe{
+    margin-top: 130px;
+}
+
+.food__recipe__title1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    left: 0;
+    color: #0645AD;
+}
+
+.food__recipe__title2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 57px;
+    color: #000;
+}
+
+.food__recipe__title__box{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.food__recipe__title3{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    left: 0;
+    color: #0645AD;
+    cursor: pointer;
+}
+
+.food__recipe__box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-between;
+    max-height: 550px;
+    overflow: hidden;
+}
+
+.open{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+.food__recipe__item{
+    width: 518px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 40px;
+}
+
+/* .food__recipe__hiden{
+    display: none;
+} */
+
+.img__recipe{
+    border-radius: 20px;
+}
+
+/* bookmarker */
+.bookmarker__box{
+    position: absolute;
+    opacity: .8;
+    display: none;
+}
+
+.bookmark2{
+    position: absolute;
+}
+
+.recipe__description{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.recipe_grade_box{
+    display: flex;
+    align-items: center;
+}
+
+.recipe__name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+}
+
+.grade__star{
+    margin-right: 5px;
+}
+
+.grade{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    margin-left: 30px;
+}
+
+/* about__us */
+.about__us__box{
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img__shef{
+    border-radius: 20px;
+    height: 642px;
+}
+
+.about__us__item{
+    width: 100%;
+    margin-left: 65px;
+    flex-wrap: wrap;
+}
+
+.about__us__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    color: #0645AD;
+}
+.about__us__title2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 57px;
+    color: #000;;
+}
+
+.about__us__text{
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #aaa;
+}
+
+.shef_description_box{
+    display: flex;
+    margin-top: 55px;
+}
+
+.shef__show{
+    display: none;
+}
+
+.shef__hiden{
+   
+}
+
+.img__shef__description{
+    height: 62px;
+    background: #57BE6C;
+    padding: 12px 16px;
+    border-radius: 20px;
+}
+
+.shef_description_item{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 55px;
+    width: 100%;
+}
+
+.shef_description_item__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #000;
+}
+
+.shef_description_item__text{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    color: #aaa;
+}
+
+.shef__more{
+    margin: 65px auto 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 23px;
+    background: #ECECEC;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.shef__more__open{
+    margin: 65px auto 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 23px;
+    background: #ECECEC;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+/* reviews */
+.reviews{
+    margin-top: 100px;
+}
+
+.reviews__box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    color: #0645AD;
+}
+
+.reviews__title2{
+    margin-top: 7px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 57px;
+    color: #000;
+}
+
+.reviews__text{
+    margin-top: 43px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #aaa;
+}
+
+.person__reviews__box{
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.person__reviews__left{
+    display: flex;
+}
+
+.img__person__reviews{
+    border-radius: 50%;
+}
+
+.person__name__title__box{
+    margin-left: 22px;
+    flex-wrap: wrap;
+}
+
+.person__name{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+}
+
+.person__position{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #aaa;
+}
+
+.person__reviews__right{
+    display: flex;
+}
+
+.reviews__rate__box{
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+.rate{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+}
+
+.reviews__grade{
+    display: flex;
+}
+
+.reviews__grade__star{
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.reviews__grade__star:first-child{
+    margin-left: 0px;
+}
+
+.reviews__grade{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000;
+    align-items: flex-end;
+}
+
+/* left */
+.reviews__right__item{
+    margin-left: 100px;
+}
+
+.img__reviews{
+    border-radius: 20px;
+}
+
+/* subscribe */
+.subscripe{
+    margin-top: 160px;
+    display: flex;
+}
+
+.subscribe__img{
+    border-radius: 20px;
+}
+
+.subscribe__right__box{
+    width: 70%;
+    margin-left: 90px;
+}
+
+.subscribe__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 130%;
+    color: #000;
+}
+
+.subscribe__text{
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #aaa;
+    width: 620px;
+}
+
+.joined__box{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.joined__person__img{
+    display: flex;
+}
+
+.joined__person__item{
+    border-radius: 50%;
+    border: 3px #fff solid;
+}
+
+.help__joined{
+    position: relative;
+    left: -30px;
+}
+
+.help__joined2{
+    position: relative;
+    left: -60px;
+}
+
+.help__joined3{
+    position: relative;
+    left: -90px;
+}
+
+.subsribe__number{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 57px;
+    color: #222;
+}
+
+.subscribe__btn__box{
+    margin-top: 60px;
+    border: 1.5px solid #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.subscribe__btn__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #aaa;
+    margin-left: 50px;
+}
+
+.subscine__arow{
+    margin-right: 150px;
+}
+
+.subscribe__btn{
+    background: #FF965B;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    text-decoration: none;
+    width: 275px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* contact */
+.contact{
+    margin-top: 180px;
+    background: #57BE6C;
+    height: 500px;
+    width: 100%;
+}
+
+.contac__box{
+    display: flex;
+    height: 220px;
+}
+
+.contact__item__simpcook{
+    margin-top: 75px;
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__title__simpcook{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    color: #fff;
+}
+
+.contact__text__simpcook{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 35px;
+}
+
+/* anout__us */
+.contact__item__about__us{
+    margin-top: 75px;
+    margin-left: 175px;
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__title__about__us{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    color: #fff;
+}
+
+.contact__text__about__us{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+    text-decoration: none;
+    width: 95px;
+}
+
+.contact__text__about__us:last-child{
+    width: 140px;
+}
+
+/* support */
+.contact__item__support{
+    margin-top: 75px;
+    margin-left: 175px;
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__title__support{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    color: #fff;
+}
+
+.contact__text__support{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+    text-decoration: none;
+    width: 125px;
+}
+
+/* what to ask */
+.contact__item__form{
+    margin-top: 75px;
+    margin-left: 175px;
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact__title__form{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+
+.textarea__form{
+    border: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 18px;
+    font-weight: 400;
+    outline: none;
+    width: 210px;
+    height: 190px;
+    border-radius: 20px;
+}
+
+.form__bg{
+    margin-top: 25px;
+    padding: 25px;
+    width: 257px;
+    background: #9FDAAB;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.send__message{
+    margin-top: 25px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    height: 42px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* popup */
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    z-index: 2200;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all .8s ease 0s;
+}
+
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content{
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup__escape__area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup__body{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.popup__content{
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    max-width: 800px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    transition: all .8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.popup__title{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.popup__text{
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.popup__reg__area{
+    margin-top: 25px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    font-weight: 18px;
+    font-weight: 400;
+    outline: none;
+    background: #ECECEC;
+    border-radius: 25px;
+}
+
+.popup__btn{
+    margin-top: 25px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font-weight: 18px;
+    font-weight: 400;
+    outline: none;
+    background: #ECECEC;
+    border-radius: 25px;
+    padding: 0px 20px 0px 20px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.popup__btn:hover{
+    transform: scale(1.1);
+}
+
+/*media*/
+@media (max-width:1350px){
+
+/* intro */
+
+    .intro__box{
+        width: 500px;
+    } 
+
+    /* contact */
+    .contac__box{
+        justify-content: center;
+    }
+
+    .contact__item__form{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    /* popup */
+    .popup__content{
+        width: 500px;
+        height: 400px;
+    }
+
+    .popup__text{
+        margin: 0 auto;
+    }
+
+    .popup__reg__area{
+        margin-top: 40px;
+        font-size: 32px;
+        height: 60px;
+    }
+
+    .popup__btn{
+        font-size: 30px;
+        margin-top: 30px;
+        height: 50px;
+    }
+
+    .popup__close{
+        margin-top: 15px;
+        margin-right: 15px;
+        font-size: 32px;
+    }
+
+    .popup__title{
+        margin-top: 30px;
+    }
+
+    /* burger */
+    .icon{
+        display: inline-block;
+    }
+    .menu{
+        position: fixed;
+        display: none;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-top: 75px;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 1500;
+        overflow: auto;
+        
+        height: 50%;
+    }
+    .li{
+        display: flex;
+        font-size: 30px;
+        margin-top: 70px;
+        justify-content: center;
+    }
+    .icon span{
+        display: inline-block;
+    }
+    .header__menu__item{
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        color: #000;
+    }
+    .header__menu.header__menu-open .icon span:nth-child(1){
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    .header__menu.header__menu-open .icon span:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .header__menu.header__menu-open .icon span:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    .header__menu.header__menu-open .icon span:nth-child(4){
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    .header__menu.header__menu-open .menu{
+        display: inline-block;
+    }
+
+    .sign__in{
+        margin-left: 460px;
+        color: #fff;
+        width: 250px;
+        height: 70px;
+    }
+
+    .sign__in:hover{
+        margin-top: 40px;
+        height: 320px;
+        width: 400px;
+        margin-left: 390px;
+    }
+
+    .sign__in__form{
+        justify-content: center;
+        display: flex;
+    }
+
+    .sign__in:hover .sign__in__btn{
+        margin-top: 90px;
+        width: 120px;
+        height: 60px;
+        font-size: 26px;
+        margin-left: 80px;
+    }
+
+    .sign__in:hover .form__text{
+        margin-top: 70px;
+        height: 50px;
+        width: 70%;
+        font-size: 26px;
+    }
+
+    .sign__in:hover .password{
+        margin-top: 90px;
+    }
+
+    /* header */
+    .header__menu__item{
+        font-size: 30px;
+    }
+
+    .header__fixed{
+        height: 80px;
+    }
+
+    /* intro */
+    .intro__text{
+        font-size: 22px;
+        margin-top: 30px;
+        width: 380px;
+    }
+    .category__name{
+        font-size: 24px;
+    }
+
+    /* search */
+    .search__category{
+        margin: 10px 0 10px 0;
+        width: 160px;
+    }
+
+    /* food__recipe */
+    .food__recipe__title1{
+        font-size: 24px;
+    }
+
+    .food__recipe__title3{
+        font-size: 24px;
+    }
+
+    .grade{
+        font-size: 24px;
+    }
+
+    /* about us */
+    .about__us__title{
+        font-size: 24px;
+    }
+
+    .about__us__text{
+        font-size: 24px;
+    }
+
+    /* shef */
+    .shef_description_item__text{
+        font-size: 25px;
+    }
+    .shef__more{
+        padding: 22px 28px;
+    }
+
+    /* reviews */
+    .reviews__title{
+        font-size: 24px;
+    }
+
+    .reviews__text{
+        font-size: 24px;
+    }
+
+    .person__reviews__box{
+        margin-top: 80px;
+    }
+
+    .person__name{
+        font-size: 26px;
+    }
+
+    .person__position{
+        font-size: 22px;
+    }
+
+    .rate{
+        font-size: 22px;
+    }
+
+    /* subsribe */
+    .subscribe__text{
+        font-size: 24px;
+    }
+
+    .subscribe__btn__text{
+        width: 100%;
+    }
+
+    /* contact */
+    .contact__text__simpcook{
+        font-size: 24px;
+    }
+
+    .contact__text__about__us{
+        font-size: 24px;
+    }
+
+    .contact__text__support{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:768px){
+    /* intro */
+    .intro__text{
+        font-size: 24px;
+        margin-top: 30px;
+        width: 400px;
+    }
+}
+
+@media (max-width:375px){
+    /* popup */
+    .popup__content{
+        width: 700px;
+        height: 600px;
+    }
+
+    .popup__text{
+        margin: 0 auto;
+    }
+
+    .popup__reg__area{
+        margin-top: 50px;
+        font-size: 40px;
+        height: 80px;
+    }
+
+    .popup__btn{
+        font-size: 36px;
+        margin-top: 50px;
+        height: 70px;
+    }
+
+    .popup__close{
+        margin-top: 15px;
+        margin-right: 15px;
+        font-size: 32px;
+    }
+
+    .popup__title{
+        margin-top: 30px;
+    }
+
+    /* sign_in */
+
+    .menu{
+        height: 70%;
+    }
+
+    .icon{
+        transform: scale(1.2);
+        margin-right: 20px;
+    }
+
+    .header__menu__item{
+        margin-top: 15px;
+        font-size: 52px;
+    }
+
+    .sign__in:hover{
+        transform: scale(1.3);
+    }
+
+    .logo__header{
+        transform: scale(1.2);
+        margin-left: 20px;
+    }
+
+    .sign__in__img{
+        transform: scale(1.4);
+    }
+
+    .sign__in{
+        margin-left: 420px;
+        color: #fff;
+        width: 350px;
+        height: 90px;
+    }
+
+    .sign__in:hover{
+        margin-top: 40px;
+        height: 320px;
+        width: 400px;
+        margin-left: 390px;
+    }
+
+    .sign__in__form{
+        justify-content: center;
+        display: flex;
+    }
+
+    .sign__in:hover .sign__in__btn{
+        margin-top: 90px;
+        width: 120px;
+        height: 60px;
+        font-size: 26px;
+        margin-left: 80px;
+    }
+
+    .sign__in:hover .form__text{
+        margin-top: 70px;
+        height: 50px;
+        width: 70%;
+        font-size: 26px;
+    }
+
+    .sign__in:hover .password{
+        margin-top: 90px;
+    }
+    /* intro */
+    .intro__text{
+        font-size: 28px;
+        margin-top: 30px;
+        width: 400px;
+    }
+    .category__name{
+        font-size: 26px;
+    }
+
+    .category__item{
+        font-size: 26px;
+    }
+
+    .intro__btn{
+        font-size: 26px;
+    }
+
+    /* search */
+    .search__category{
+        margin: 10px 0 10px 0;
+        width: 180px;
+    }
+
+    .search__btn{
+        font-size: 26px;
+    }
+
+    /* food__recipe */
+    .food__recipe__title1{
+        font-size: 26px;
+    }
+
+    .food__recipe__title3{
+        font-size: 26px;
+    }
+
+    .grade{
+        font-size: 26px;
+    }
+
+    /* about us */
+    .about__us__title{
+        font-size: 26px;
+    }
+
+    .about__us__text{
+        font-size: 26px;
+    }
+
+    /* shef */
+    .shef_description_item__text{
+        font-size: 26px;
+    }
+    .shef__more{
+        padding: 22px 48px;
+    }
+
+    /* reviews */
+    .reviews__title{
+        font-size: 26px;
+    }
+
+    .reviews__text{
+        font-size: 26px;
+    }
+
+    .reviews__grade{
+        font-size: 26px;
+    }
+
+    .person__reviews__box{
+        margin-top: 80px;
+    }
+
+    .person__name{
+        font-size: 26px;
+    }
+
+    .person__position{
+        font-size: 26px;
+    }
+
+    .rate{
+        font-size: 26px;
+    }
+
+    /* subsribe */
+    .subscribe__text{
+        font-size: 26px;
+    }
+
+    .subscribe__btn__text{
+        width: 100%;
+    }
+
+    .subscribe__btn{
+        padding: 0px 20px;
+    }
+
+    /* contact */
+    .contact__text__simpcook{
+        font-size: 24px;
+    }
+
+    .contact__text__about__us{
+        font-size: 24px;
+    }
+
+    .contact__text__support{
+        font-size: 24px;
+    }
+}
